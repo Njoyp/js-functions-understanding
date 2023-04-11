@@ -239,7 +239,8 @@
 
 // let result = 0;
 // myFunction(100, 2);
-// console.log(result); // expected 0 because the variable has value 0
+// console.log(result); // expected 0 because the variable in the
+// global scope has value 0 and is being logged
 
 // Q23
 // function myFunction(num1, num2) {
@@ -249,7 +250,7 @@
 // let result = 0;
 // myFunction(100, 2);
 // console.log(result); // expected 0 because the variable has value 0
-// // result is 102
+// result is 102 result is defined in global but redecleared by local scope
 
 // Q24
 // function myFunction(num1, num2) {
@@ -261,16 +262,16 @@
 // console.log(result); // expected 100 because the functions returns 100 regardless
 
 // Q25
-function myFunction(a) {
-  let b = 20;
+// function myFunction(a) {
+//   let b = 20;
 
-  console.log("a:", a); // expected a: 100 (parameter value given in call)
-  console.log("b:", b); // expected b: 20 (variable inside local scope)
-  console.log("c:", c); // expected c: 3 (variable inside global scope)
-}
+//   console.log("a:", a); // expected a: 100 (parameter value given in call)
+//   console.log("b:", b); // expected b: 20 (variable inside local scope)
+//   console.log("c:", c); // expected c: 3 (variable inside global scope)
+// }
 
-let a = 1;
-let b = 2;
-let c = 3;
+// let a = 1;
+// let b = 2;
+// let c = 3;
 
-myFunction(100);
+// myFunction(100);
